@@ -1,4 +1,4 @@
-# libcryptic JSON API configuration
+# libcryptick JSON API configuration
 
 Each object required by the configuration file is of the format 'name (type)'.
 
