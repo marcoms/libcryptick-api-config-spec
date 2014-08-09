@@ -6,7 +6,7 @@ See footnote for definition of 'format `Array`s'.
 
 ## `name` (`String`)
 
-*mandatory*
+*required*
 
 The API's service name.
 
@@ -19,7 +19,7 @@ The API's service name.
 
 ## `url` (`String` / format `Array`)
 
-*mandatory*
+*required*
 
 The main JSON provided by the API.
 
