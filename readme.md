@@ -1,6 +1,6 @@
 # libcryptick JSON API configuration
 
-Each object required by the configuration file is of the format 'name (type)'.
+Each object listed in this document is of the format 'name (type)'.
 
 See footnote for definition of 'format `Array`s'.
 
