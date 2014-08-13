@@ -60,6 +60,17 @@ Location to object giving the status of the API response, where a positive respo
 * `["status"]`
 * `["result"]`
 
+### `paths.code` (`Array` or `String`s / `Array` of format `Array`s)
+
+*optional*
+
+Location to object giving the abbreviated form of the coin (eg. "BTC", "LTC", "DOGE").
+
+#### Examples
+
+* `["data", "code"]`
+* `["data", "type"]`
+
 ### `paths.buy` (`Array` of `String`s / `Array` of format `Array`s)
 
 *required*
