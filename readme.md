@@ -60,13 +60,13 @@ Location to object giving the status of the API response, where a positive respo
 * `["status"]`
 * `["result"]`
 
-## `paths.status_description` (`String`)
+### `paths.status_description` (`String`)
 
 *optional*
 
 The string providing a description for an erroneous API call.
 
-### Examples
+#### Examples
 
 * `["message"]`
 * `["data"]`
