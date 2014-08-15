@@ -43,17 +43,6 @@ The value in `paths.status` denoting a successful API response.
 * `"success"`
 * `"good"`
 
-## `paths.status_description` (`String`)
-
-*optional*
-
-The string providing a description for an erroneous API call.
-
-### Examples
-
-* `["message"]`
-* `["data"]`
-
 ## `paths` (`Object`)
 
 *required*
@@ -70,6 +59,17 @@ Location to object giving the status of the API response, where a positive respo
 
 * `["status"]`
 * `["result"]`
+
+## `paths.status_description` (`String`)
+
+*optional*
+
+The string providing a description for an erroneous API call.
+
+### Examples
+
+* `["message"]`
+* `["data"]`
 
 ### `paths.code` (`Array` or `String`s / `Array` of format `Array`s)
 
