@@ -30,18 +30,29 @@ The main JSON provided by the API.
 * `["https://www.allcoin.com/api2/pair/", "{c}", "_", "{e}"]`
 * `"https://www.allcoin.com/api2/pairs"`
 
-## `success` (`String`)
+## `status_success` (`String` / `Number` (integer) / `Boolean`)
 
 *required if `paths.status` is defined*
 
-The string in `paths.status` denoting a successful API response.
+The value in `paths.status` denoting a successful API response.
 
 ### Examples
 
-* `"good"`
+* `1`
+* `true`
 * `"success"`
-* `"true"`
-* `"A-OK brotha"`
+* `"good"`
+
+## `paths.status_description` (`String`)
+
+*optional*
+
+The string providing a description for an erroneous API call.
+
+### Examples
+
+* `["message"]`
+* `["data"]`
 
 ## `paths` (`Object`)
 
@@ -98,9 +109,11 @@ Location to the top bidding price.
 	{
 		"name": "MintPal"
 		, "url": ["https://api.mintpal.com/v2/market/stats/", "{c}", "/", "{e}"]
-		, "success": "success"
+		, "status_success": "success"
 		, "paths": {
-			"status": ["status"]
+			"code": ["data", "code"]
+			, "status": ["status"]
+			, "status_description": ["message"]
 			, "buy": ["data", "top_ask"]
 			, "sell": ["data", "top_bid"]
 		}
