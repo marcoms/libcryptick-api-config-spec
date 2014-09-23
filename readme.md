@@ -27,7 +27,7 @@ Where coin = `"DOGE"` and exchange = `"BTC"`.
 
 *required*
 
-The API's service name.
+The API's name.
 
 #### Examples
 
@@ -40,7 +40,7 @@ The API's service name.
 
 *required*
 
-The main JSON provided by the API.
+Link to JSON provided by the API.
 
 #### Examples
 
@@ -79,7 +79,7 @@ Possible values are:
 
 Object providing locations in JSON for common API information, where each element in the array is the parent object of the subsequent element in the array.
 
-#### `paths.status` (`Array` of `String`s / `Array` of format `Array`s)
+#### `paths.status` (`Array` of `String`s / format `Array`s)
 
 *optional*
 
@@ -90,7 +90,7 @@ Location to object giving the status of the API response, where a positive respo
 * `["status"]`
 * `["result"]`
 
-#### `paths.status_desc` (`String`)
+#### `paths.status_desc` (`Array` of `String`s / format `Array`s)
 
 *optional*
 
@@ -101,7 +101,7 @@ The string providing a description for an erroneous API call.
 * `["message"]`
 * `["data"]`
 
-#### `paths.buy` (`Array` of `String`s / `Array` of format `Array`s)
+#### `paths.buy` (`Array` of `String`s / format `Array`s)
 
 *required*
 
@@ -112,7 +112,7 @@ Location to the top asking price.
 * `["data", "top_ask"]`
 * `["data", ["{c}", "_", "{e}"], "top_ask"]`
 
-#### `paths.sell` (`Array` of `String`s / `Array` of format `Array`s)
+#### `paths.sell` (`Array` of `String`s / format `Array`s)
 
 *required*
 
