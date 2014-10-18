@@ -130,7 +130,6 @@ Location to the top bidding price.
 		, "url": ["https://api.mintpal.com/v2/market/stats/", "{c}", "/", "{e}"]
 		, "status_success": "success"
 		, "paths": {
-			"code": ["data", "code"]
 			, "status": ["status"]
 			, "status_description": ["message"]
 			, "buy": ["data", "top_ask"]
